@@ -5,13 +5,14 @@
 #include <stdlib.h>    
 #include <time.h> 
 #include "Buffer.h"
+int* tam = new int[10];
+Buffer* bufer = new Buffer;
 
 void *RunC(void *threadid);
 void *RunP(void *threadid);
 
 int main(int argc,char*argv[]){
-    int* tam = new int[10];
-	Buffer* bufer = new Buffer;
+    
     pthread_t Productor;
     pthread_t Consumidor;
     int i=0;

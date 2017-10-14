@@ -1,5 +1,5 @@
 Buffer:	Buffer.o main.o
-	g++ Buffer.o main.o -o exe
+	g++ Buffer.o main.o -o exe -pthread
 
 main.o: main.cpp Buffer.h
 	g++ -c main.cpp
